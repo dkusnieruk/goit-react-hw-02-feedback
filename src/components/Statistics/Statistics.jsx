@@ -3,7 +3,7 @@ import css from '../Statistics/statistics.module.css';
 class Statistics extends Component {
     render(){
         return( 
-        <div className={css.statisticsMenu}>
+        <div id="stats" className={css.statisticsMenu}>
             <h1>Statistics</h1>
             <ul className={css.statisticsList}>
                 <li className={css.statisticsSingle}>Good : {this.props.good}</li>
