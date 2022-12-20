@@ -38,7 +38,6 @@ countPositivePercentage=() => {
     const {good, neutral, bad} = this.state 
     return (
       <div>
-        <span> App JSX connect</span>
         <Statistics good={good} neutral={neutral} bad={bad} totalNumber={this.countTotalFeedback()||0} positivePercent={this.countPositivePercentage()||0}/>
         <FeedbackOptions click={this.handleFeedback}/>
       </div>
