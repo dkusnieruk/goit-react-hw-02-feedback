@@ -18,7 +18,6 @@ class App extends Component {
 
   handleFeedback = event => {
     const { id } = event.target;
-    console.log(id);
 
     this.setState(state => ({
       [id]: state[id] + 1,
@@ -70,6 +69,7 @@ App.propTypes = {
   totalNumber: PropTypes.number,
   positivePercent: PropTypes.number,
   message: PropTypes.string,
+  title: PropTypes.string
 };
 
 export default App;

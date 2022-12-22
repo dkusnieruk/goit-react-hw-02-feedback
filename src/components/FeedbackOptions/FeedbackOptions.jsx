@@ -2,7 +2,8 @@ import { Component } from 'react';
 import css from '../FeedbackOptions/feedbackOptions.module.css';
 class FeedbackOptions extends Component {
   render() {
-    console.log(this.props);
+    
+    
     return (
       <div className={css.buttonMenu}>
         <h1>{this.props.title}</h1>
