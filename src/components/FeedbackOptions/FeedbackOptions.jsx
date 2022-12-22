@@ -5,7 +5,7 @@ class FeedbackOptions extends Component {
     console.log(this.props);
     return (
       <div className={css.buttonMenu}>
-        <h1>Please leave Feedback</h1>
+        <h1>{this.props.title}</h1>
         <div>
           <button className={css.button} id="good" onClick={this.props.click}>
             Good
