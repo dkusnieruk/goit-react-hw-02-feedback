@@ -13,7 +13,7 @@ class App extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    title: 'Statistics',
+   
   };
 
   handleFeedback = event => {
@@ -50,8 +50,8 @@ class App extends Component {
               good={good}
               neutral={neutral}
               bad={bad}
-              totalNumber={this.countTotalFeedback() || 0}
-              positivePercent={this.countPositivePercentage() || 0}
+              totalNumber={this.countTotalFeedback() }
+              positivePercent={this.countPositivePercentage()}
             />
           ) : (
             <Notification message={'There is no Feedback'} />
