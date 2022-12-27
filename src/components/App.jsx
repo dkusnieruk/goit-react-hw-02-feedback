@@ -3,12 +3,8 @@ import Statistics from './Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Notification from './Notification/Notification';
 import Section from './Section/Section';
-import PropTypes from 'prop-types';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
   state = {
     good: 0,
     neutral: 0,
@@ -62,14 +58,6 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-  good: PropTypes.number,
-  neutral: PropTypes.number,
-  bad: PropTypes.number,
-  totalNumber: PropTypes.number,
-  positivePercent: PropTypes.number,
-  message: PropTypes.string,
-  title: PropTypes.string
-};
+
 
 export default App;

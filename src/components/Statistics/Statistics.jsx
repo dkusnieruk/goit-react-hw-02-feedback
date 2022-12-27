@@ -2,12 +2,10 @@ import { Component } from 'react';
 import css from '../Statistics/statistics.module.css';
 import propTypes from 'prop-types';
 class Statistics extends Component {
-  constructor(props) {
-    super(props);
-  }
+  
   render() {
     return (
-      <div id="stats" className={css.statisticsMenu}>
+      <div  className={css.statisticsMenu}>
         <h1>Statistics</h1>
         <ul className={css.statisticsList}>
           <li className={css.statisticsSingle}>Good : {this.props.good}</li>
@@ -26,9 +24,6 @@ class Statistics extends Component {
     );
   }
 }
-
-export default Statistics;
-
 Statistics.propTypes ={
   good: propTypes.number,
   neutral: propTypes.number,
@@ -36,3 +31,6 @@ Statistics.propTypes ={
   positivePercent: propTypes.number,
   totalNumber: propTypes.number
 }
+
+export default Statistics;
+
